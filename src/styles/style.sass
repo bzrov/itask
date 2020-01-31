@@ -1,0 +1,78 @@
+@import vars
+@import fonts
+body
+    font-size: 16px
+    margin: 0
+    font-family: 'Roboto', sans-serif
+    overflow-x: hidden
+    color: var(--main-text-color)
+*
+    box-sizing: border-box
+    &:focus
+        outline: none
+#root
+    overflow-x: hidden
+p,button
+    padding: 0
+    margin: 0 
+textarea
+    resize: none
+.window-overlay
+    width: 100vw
+    height: 100vh
+.modal
+    position: absolute
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #7daef5
+    z-index: 12
+.window-modal
+    position: relative
+    z-index: 4
+.btn
+    background-color: transparent
+    border: none
+.btn-remove
+    border: none
+    background-color: transparent 
+    color: var(--btn-close)
+    font-size: .85em
+    &:hover
+        cursor: pointer
+.btn-edit
+    border: none
+    background-color: transparent 
+    color: #6fcf97
+    font-size: .85em
+    &:hover
+        cursor: pointer
+.btn-save
+    display: inline-block
+    padding: 6px 12px
+    border: none
+    background-color: #27AE60
+    font-size: 1em
+    border-radius: 3px
+    color: #ffffff
+    &:hover
+        cursor: pointer
+.btn-close 
+    padding: 6.5px 9.5px
+    color: #ffffff
+    line-height: 1
+    background-color: var(--btn-close)
+    border-radius: 3px
+    border: none
+    &:hover
+        cursor: pointer
+
+
+
+
+@media screen and ( max-width:  576px )
+    .btn-save
+        font-size: .8em
+    

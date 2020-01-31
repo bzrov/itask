@@ -1,0 +1,70 @@
+.add-board__modal
+    width: 620px
+    height: 420px
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    background: url('../../assets/add-board-popup-bg.png')
+    background-size: cover
+    background-position: center
+    border-radius: 6px
+    z-index: 12
+.add-board__title-board
+    position: relative
+    top: -1px
+    left: -10.2px
+    padding: 20px 15px
+    margin-bottom: 15px
+    border: none
+    font-size: 1.1em
+    &::placeholder
+        font-size: .7em
+
+.add-board__btn-save
+    position: relative
+    left: 60px
+    font-size: .75em
+.add-board__topic-board
+    position: absolute 
+    top: 74px
+    max-width: 133px
+    right: 90px
+    padding: 22px 14px
+    border: none
+    color: #ffffff
+    background-color: #f56f88
+    transform: rotate(3deg)
+    &::placeholder
+        color: #ffffff
+.modal__btn-close
+    position: absolute
+    right: 20px
+    top: 20px
+.add-board
+    bottom: 0
+    left: 0
+    margin: 20px auto
+.add-board__btn-add
+    display: block
+    margin: 0 auto
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    border: none
+    font-size: 2em
+    text-align: center
+    color: var(--main-board-bg)
+    background-color: var(--btn-background)
+    &:hover
+        cursor: pointer
+@media screen and (max-width: 768px)
+    .add-board__topic-board
+        right: 14.5%
+        width: 22%
+@media screen and (max-width: 525px)
+    .add-board__topic-board
+        width: 120px
+        right: 59%
+        top: 106px
+        transform: rotate(-3deg)

@@ -1,0 +1,48 @@
+.home-page__header
+    position: absolute
+    top: 0 
+    left: 0
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 20px 30px
+    background-color: var(--main-board-sidebar)
+    
+.home-page__boards
+    position: absolute
+    bottom: 0
+    overflow-y: auto
+    height: calc(100vh - 90px)
+    width: 100%
+    min-height: 87.875vh
+    padding: 0 20px
+    background-color: var(--main-board-bg)
+.home-page__text
+    font-size: 1.8em
+    padding-left: 9px
+    margin: 40px auto 0px auto
+.home-page__text_center
+    text-align: center
+.home-page__board
+    position: relative
+    display: inline-block
+    width: 22%
+    margin: 20px 9px 20px 9px
+    min-width: 240px
+    max-width: 520px
+    height: 15vh
+    padding: 20px
+    border-radius: 6px
+    background-color:  var(--main-list-bg)
+    text-decoration: none
+    &:hover
+        .board__btn
+            display: block
+.title-boards_mini
+    color: var(--main-text-color)
+.home-page__add-board
+    position: fixed
+    bottom: 20px
+    right: 20px
+    

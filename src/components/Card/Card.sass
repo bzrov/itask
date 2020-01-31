@@ -1,0 +1,111 @@
+.card
+    display: flex
+    align-items: center
+    border-radius: 3px
+    background-color: var(--main-card-bg)
+    width: 100%
+    margin: 0 auto 15px auto
+    padding: 30px 10px 30px 10px
+    position: relative
+
+    &:hover
+        cursor: pointer
+        .card__btns
+            display: flex
+        .card__done
+            display: block
+.card_done
+    position: relative
+    background-color: #6fcf97
+    .card__text
+        color: #ffffff
+    .card__btn
+        color: #ffffff
+    .card__done
+        display: block
+    .card__priority 
+        background-color: #fff
+.card_editing
+    margin-bottom: 50px
+
+.card__text
+    width: 100%
+    padding: 0 20px
+    margin-bottom: 6px
+    word-wrap: break-word
+    color: var(--card-text-color)
+.card__priority
+    display: block
+    position: absolute
+    height: 80%
+    padding: 9px 0
+    width: 3px
+    left: 9px
+    border-radius: 3px
+.card__done
+    display: none
+    position: absolute
+    top: 9px
+    right: 9px
+.card__btns
+    display: none
+    position: absolute 
+    bottom: 0 
+    left: 0
+    width: 100%
+    padding: 10px
+    justify-content: flex-end
+    z-index: 6
+.card__btn
+    margin: 0 6px
+    &:first-child
+        margin-left: 0px
+    &:last-child
+        margin-right: 0px
+.default
+    background: var(--card-priority-default)
+.low
+    background: var(--card-priority-low)
+.medium
+    background: var(--card-priority-med)
+.high
+    background: var(--card-priority-high)
+
+.card__edit
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    padding: 10px
+    background-color: white
+    border-radius: 3px
+    z-index: 9
+.edit-text__textarea
+    width: 100%
+    height: 100%
+    overflow-y: visible
+    padding: 6px
+    font-size: .85em
+    border: none
+    border-radius: 3px
+    font-size: 1em
+    color: var(--card-text-color)
+    background-color: whitesmoke
+.card__edit-priority
+    margin-bottom: 12px
+.edit-text__btn
+    font-size: .8em
+.card__edit-btns
+    position: absolute
+    bottom: -40px
+    left: 0
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 0px 10px 5px 10px
+.test
+    width: 100vw
+    height: 100vh
+    position: absolute

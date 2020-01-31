@@ -1,0 +1,126 @@
+.board-header
+    position: absolute
+    right: 0
+    top: 0
+    width: 85.875%
+    height: 10%
+    padding: 9px 40px
+    background: var(--main-board-header-bg)
+    border-bottom: 1px solid var(--border-color)
+    z-index: 9
+.header__baord-info
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 100%
+.board-header__title-topic
+    width: 30%
+    padding: 9px 0px
+    font-size: 1.5em
+    text-overflow: ellipsis
+    overflow: hidden
+.board-header__title
+    font-weight: 800
+    margin-right: 9px
+.board-header__topic
+    padding: 3px 12px
+    border-radius: 3px
+    background: var(--topic-bg)
+    font-size: .75em
+    color: var(--accent-color)
+    
+
+.board__colors-info 
+    display: flex
+    align-items: center
+.colors-info__color-line
+    width: 3px
+    height: 25px
+    border-radius: 3px
+    margin-left: 9px
+ 
+.colors-info__item
+    display: flex
+    align-items: center
+    flex-direction: row-reverse
+    margin-left: 15px
+.header__change-theme
+    width: 30%
+    text-align: end
+.change-theme__switch
+    position: relative 
+    display: inline-block  
+    width: 60px
+    height: 34px   
+.change-theme__input
+        opacity: 0 
+        width: 0   
+        height: 0  
+.change-theme__toggle
+    position: absolute 
+    cursor: pointer
+    top: 0 
+    left: 0
+    right: 0   
+    bottom: 0  
+    background-color: #ffffff
+    -webkit-transition: .4s
+    transition: .4s
+    overflow: hidden
+    &::before
+        position: absolute
+        content: ""
+        height: 26px
+        width: 26px
+        left: 4px
+        bottom: 4px
+        background: rgba(25,27,43,1)
+        -webkit-transition: .4s
+        transition: .4s
+    &::after
+        position: absolute
+        content: ""
+        height: 26px
+        width: 26px
+        left: -5px
+        bottom: 4px
+        background: #ffffff
+        border-radius: 50%
+        -webkit-transition: .4s
+        transition: .4s
+        
+.change-theme__input:checked + .change-theme__toggle
+    background: linear-gradient(139.95deg, #9EA7FC 0%, #65B6F7 114.98%)
+    &::before
+        background-color: yellow
+   
+
+.change-theme__input:focus + .change-theme__toggle
+    box-shadow: 0 0 1px linear-gradient(139.95deg, #9EA7FC 0%, #65B6F7 114.98%)
+.toggle-round
+    border-radius: 20px
+    &::before 
+        border-radius: 50%
+
+.change-theme__input:checked + .change-theme__toggle:before 
+    transform: translateX(26px)
+.change-theme__input:checked + .change-theme__toggle:after
+    transition: 1s
+    transform: translateX(-26px)
+
+@media screen and ( max-width: 998px )
+    .board-header
+        width: 100%
+
+
+@media screen and ( max-width: 576px  )
+    .board-header
+        padding: 9px 25px
+
+    .board__colors-info
+        position: absolute
+        bottom: 9px
+        right: 25px
+    .board-header
+        height: 13%
+        padding-bottom: 50px

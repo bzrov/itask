@@ -1,0 +1,45 @@
+.boards
+    height: 80%
+    display: flex
+    flex-direction: column
+    max-height: 80%
+    overflow-x: hidden
+    overflow-y: auto
+    background: var(--main-board-sidebar)
+.boards__list
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 20px 0
+    background: var(--main-board-sidebar)
+.board__list-link
+    position: relative
+    border-right: 2px solid var(--border-boards)
+    width: 100%
+    height: 106px
+    padding: 15px
+    margin: 9px 0
+    color: var(--main-text-color)
+    text-decoration: none
+    &:hover 
+        .board__btn-remove
+            display: block
+.board__btn-remove
+    position: absolute
+    right: 9px
+    top: 9px
+    display: none
+
+.title-boards_mini
+    font-size: 1.35em
+    overflow-y: auto
+.topic-boards_mini
+    display: inline-block
+    max-width: 90%
+    padding: 3px 9px
+    margin-bottom: 9px
+    background:  var(--topic-bg)
+    color: var(--accent-color)
+    border-radius: 3px
+    overflow-y: auto
