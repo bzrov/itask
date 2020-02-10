@@ -1,8 +1,10 @@
 
 # itask_app
 Itask is the simply, flexible, and free way to organize plans, projects and more. Kanban Boards. Work Offline.
+<br />
 Itask created with React adn Redux
-created by @bzrov
+<br />
+created by [@bzrov](mailto:bzrov@mail.ru)
 
 ## Available Scripts
 ### `npm start`
