@@ -13,8 +13,8 @@ export default function App (){
             <Router>
                 <div className="app-container">
                     <Switch>
-                        <Route  exact path="/" component={HomePage} />
-                        <Route  exact path="/boards/:board" component={Board} />
+                        <Route  exact path="/itask/" component={HomePage} />
+                        <Route  path="/itask/#/boards/:board" component={Board} />
                     </Switch>
                     <div className="window-overlay" id="window-overlay">
 

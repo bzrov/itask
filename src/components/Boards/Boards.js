@@ -19,7 +19,7 @@ const Boards = (props) => {
                         return (
                             <Link 
                                 to={{
-                                    pathname: `/boards/${board.id}`,
+                                    pathname: `/itask/#/boards/${board.id}`,
                                     board,
                                 }} key={idx}
                                 className="board__list-link">

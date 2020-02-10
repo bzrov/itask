@@ -17,9 +17,11 @@ const AddBoard = (props) => {
 
         return (
             <div className="add-board">
-                <button className="add-board__btn-add add-board__btn-open" onClick={()=> setIsModalActive(true)}>
-                    +
-                </button>
+                {!isModalActive && 
+                    <button className="add-board__btn-add add-board__btn-open" onClick={()=> setIsModalActive(true)}>
+                        +
+                    </button>
+                }
                 {
                     isModalActive && 
                     ReactDOM.createPortal(
