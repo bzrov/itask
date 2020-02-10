@@ -4,6 +4,7 @@ Itask is the simply, flexible, and free way to organize plans, projects and more
 <br />
 Itask created with React adn Redux
 <br />
+Live: [iTask](https://bzrov.github.io/itask/)
 created by [@bzrov](mailto:bzrov@mail.ru)
 
 ## Available Scripts
